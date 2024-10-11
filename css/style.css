@@ -270,7 +270,10 @@ legend {
   white-space: normal; }
 
 progress {
-  vertical-align: baseline; }
+  vertical-align: baseline; 
+  display: flex;
+  justify-content: center;
+  align-items: center;}
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
@@ -476,10 +479,32 @@ pre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* flex-direction: column; */
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  /* margin-right: -15px;
+  margin-left: -15px; */
+ }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px; 
+  
+    align-items: center;
+    text-align: center;
+    /* Pulls up the heading section */
+}
+.about img{
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.heading-section {
+    padding-top: 20px; /* Adjust this value to reduce the space */
+    margin-top: 0; /* Ensure there's no extra margin at the top */
+}
+
 
 .no-gutters {
   margin-right: 0;
@@ -9239,7 +9264,8 @@ textarea.form-control {
       font-weight: 400; }
     @media (max-width: 767.98px) {
       .heading-section h2 {
-        font-size: 38px; } }
+        font-size: 38px;
+      text-align: center; } }
   .heading-section.heading-section-white .subheading {
     color: rgba(255, 255, 255, 0.9) !important; }
   .heading-section.heading-section-white h2 {
