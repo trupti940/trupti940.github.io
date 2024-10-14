@@ -8524,6 +8524,12 @@ h1, h2, h3, h4, h5,
                     display: none;
                   }
                 }
+                @media (max-width: 1024px) {
+                  .owl-carousel.home-slider .slider-item .slider-text .one-third {
+                    display: none;
+                  }
+                }
+
                 @media (min-width: 1200px) {
                   .owl-carousel.home-slider .slider-item .slider-text .one-third {
                     display: none;
